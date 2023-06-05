@@ -34,7 +34,7 @@ public class Presentation {
         JMenuItem exitItem = new JMenuItem("Exit");
         JMenuItem sizeItem = new JMenuItem("Size");
         JMenuItem aboutItem = new JMenuItem("About");
-
+        //salem alaykom
         // ActionListener for "Add" menu item
         addItem.addActionListener(new ActionListener() {
             @Override
