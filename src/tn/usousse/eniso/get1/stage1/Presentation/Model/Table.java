@@ -1,9 +1,12 @@
-package tn.usousse.eniso.get1.stage1.Model;
+package tn.usousse.eniso.get1.stage1.Presentation.Model;
+
+
+import tn.usousse.eniso.get1.stage1.Presentation.Model.Node;
 
 import java.util.Arrays;
 
 public class Table {
-    private Node [] nodes;
+    private Node[] nodes;
     private int size ;
 
     public Table(int size) {

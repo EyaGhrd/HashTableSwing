@@ -1,27 +1,27 @@
 package tn.usousse.eniso.get1.stage1.Service;
 
-import tn.usousse.eniso.get1.stage1.Model.Node;
-import tn.usousse.eniso.get1.stage1.Model.Table;
-
-import javax.naming.Name;
-import java.util.ArrayList;
+import tn.usousse.eniso.get1.stage1.Presentation.Model.Node;
+import tn.usousse.eniso.get1.stage1.Presentation.Model.Table;
 
 public class Service {
-    Table table;
+     Table table;
 
     public Table getTable() {
         return table;
     }
 
     public Service(Table table) {
-        this.table = table;
+        this.table = new Table(table.getSize());
     }
 
-    private int hachF(String value){
+    public int hachF(String value){
         int s=0;
-        for (char ch:value.toCharArray()){
-            s=s+(int)ch;}
-        return s%3;
+        if (value!=null){
+            for (char ch:value.toCharArray()){
+                s=s+(int)ch;}
+            s= s%3;}
+        else {s=0;}
+        return s;
     }
 
     public boolean find(String value){
