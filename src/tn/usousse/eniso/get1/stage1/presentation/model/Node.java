@@ -1,4 +1,4 @@
-package tn.usousse.eniso.get1.stage1.Presentation.Model;
+package tn.usousse.eniso.get1.stage1.presentation.model;
 
 public class Node {
     private String value;
